@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Incremental HIG Scraper
         run: |
-          node scripts/fetch-apple-hig.mjs --skip-images
+          node skills/apple-design/scripts/fetch-apple-hig.mjs --skip-images
 
       - name: Check for Guidelines Changes
         id: git_diff
