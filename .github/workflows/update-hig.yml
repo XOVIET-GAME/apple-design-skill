@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   sync-hig:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64, orca]
     name: Sync Apple HIG Guidelines
 
     steps:
