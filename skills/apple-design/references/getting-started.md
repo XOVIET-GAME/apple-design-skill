@@ -16,4 +16,5 @@
 - **[Designing for visionOS](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos)** - When people wear Apple Vision Pro, they enter an infinite 3D space where they can engage with your app or game while staying connected to their surroundings.
 - **[Designing for watchOS](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos)** - When people glance at their Apple Watch, they know they can access essential information and perform simple, timely tasks whether they’re stationary or in motion.
 - **[Designing for games](https://developer.apple.com/design/human-interface-guidelines/designing-for-games)** - When people play your game on an Apple device, they dive into the world you designed while relying on the platform features they love.
+- **[Designing for iPhone Duo](https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo)** - An app designed for iPhone Duo adapts seamlessly to both displays, providing a continuous experience as the device opens and closes.
 

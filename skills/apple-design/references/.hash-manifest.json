@@ -19,10 +19,10 @@
       "updatedAt": "2026-08-16T09:29:22.752Z"
     },
     "foundations": {
-      "hash": "15fac491dedc7546118ff91443eefb2c847d014522ea1860010f43848c9d5930",
+      "hash": "2d1b722b80c36263f8944aff8af71754b478ff8d90be157901ebcb7135b42d43",
       "title": "Foundations",
       "url": "/design/human-interface-guidelines/foundations",
-      "updatedAt": "2026-08-16T09:29:22.753Z"
+      "updatedAt": "2026-10-06T07:18:51.043Z"
     },
     "sidebars": {
       "hash": "cf74d84069cf35730ad135007596d9d0b4d69a72e0f7e5bd6adcfa2f511af226",
@@ -49,10 +49,10 @@
       "updatedAt": "2026-08-16T09:29:22.756Z"
     },
     "technologies": {
-      "hash": "86e10b8573374344913bcbe1549f19f4a1ecaee345ad7b607a5cfb3be677a92b",
+      "hash": "80da526d8ceca94ab9a699ee390d15e70b17c5111a564291bcc4e28b487aac91",
       "title": "Technologies",
       "url": "/design/human-interface-guidelines/technologies",
-      "updatedAt": "2026-08-16T09:29:22.757Z"
+      "updatedAt": "2026-10-06T07:18:51.043Z"
     },
     "scroll-views": {
       "hash": "e7586dc1c8489689f6eef40bdb5927c489b48042ec13fec58cf9fa3bfc4f7999",
@@ -79,10 +79,10 @@
       "updatedAt": "2026-08-16T09:29:22.760Z"
     },
     "getting-started": {
-      "hash": "be028e659e4f9c545d0802cee39541ad31e78ee92720db069dcbb58e44ea7b43",
+      "hash": "78a14a0f46e0c65b27f59ba3798f734f4bb58ad86d90c58c10b3a7acedaab5d7",
       "title": "Getting started",
       "url": "/design/human-interface-guidelines/getting-started",
-      "updatedAt": "2026-08-16T09:29:22.760Z"
+      "updatedAt": "2026-10-06T07:18:51.040Z"
     },
     "materials": {
       "hash": "eafb79c10297c1fd6badb74281344e3d4327bbd4fa075bba6da7a86ab7747bfb",
@@ -181,10 +181,10 @@
       "updatedAt": "2026-08-16T09:29:22.774Z"
     },
     "layout": {
-      "hash": "2f2ee649b6f0d7d825a43bce3283f30f0b3bc35b3c90abd7979b240bee589e2c",
+      "hash": "f2709e5f44ef00476d864ac58e8466c0793d1946b77ddef61f25640589337881",
       "title": "Layout",
       "url": "/design/human-interface-guidelines/layout",
-      "updatedAt": "2026-08-16T09:29:22.775Z"
+      "updatedAt": "2026-10-06T07:18:51.044Z"
     },
     "pull-down-buttons": {
       "hash": "45292e77b1f01b8b9c57c6fbe489400a341bfa7de1a4f2a20963d533c0cdfe95",
@@ -271,10 +271,10 @@
       "updatedAt": "2026-08-16T09:29:22.786Z"
     },
     "sf-symbols": {
-      "hash": "42b115f9859df32d0b1396a3adbfa32a5d6c7a3098d23eae9c0f2f45be5622e1",
+      "hash": "e4d547b0a771f3c84781ad4c5b1b985458c132d7fd3f4b340b47a0262f21767a",
       "title": "SF Symbols",
       "url": "/design/human-interface-guidelines/sf-symbols",
-      "updatedAt": "2026-08-16T09:29:22.787Z"
+      "updatedAt": "2026-10-06T07:18:51.062Z"
     },
     "airplay": {
       "hash": "471326ba3b437bf59c4cac1b1b1cf61f41daed6b85b779a4ef1e5de44571a75d",
@@ -349,10 +349,10 @@
       "updatedAt": "2026-08-16T09:29:22.797Z"
     },
     "branding": {
-      "hash": "910bd43034998758bb3a8051418129c4ad0e90c1a18b8c0a64b981b75520624c",
+      "hash": "1e2d8f8c61abad303c3e326ebd8da56bf46e30df187fe400ca7dd7e7aff4704d",
       "title": "Branding",
       "url": "/design/human-interface-guidelines/branding",
-      "updatedAt": "2026-08-16T09:29:22.797Z"
+      "updatedAt": "2026-10-06T07:18:51.041Z"
     },
     "tab-views": {
       "hash": "c462fe1ed21184d2d4c2d3b6b343b633d11e2fed75f5daaeebbee4d601996ad5",
@@ -421,10 +421,10 @@
       "updatedAt": "2026-08-16T09:29:22.811Z"
     },
     "icons": {
-      "hash": "48f5fbac2176a379772046111e33b31bc8a6f94072d467f591be29ef64836f46",
+      "hash": "96a75acb8d07c966625a7f2be5b9f4a55881f83d00f6504e2ce463b0646e21e0",
       "title": "Icons",
       "url": "/design/human-interface-guidelines/icons",
-      "updatedAt": "2026-08-16T09:29:22.812Z"
+      "updatedAt": "2026-10-06T07:18:51.051Z"
     },
     "pointing-devices": {
       "hash": "20d1e0a9bc2a4cedd6b93fb9f29314fd43726cceb72ab7ecfb9b4c95a0a44c2a",
@@ -487,16 +487,16 @@
       "updatedAt": "2026-08-16T09:29:22.819Z"
     },
     "managing-accounts": {
-      "hash": "ee767650abda620d86d58a3e7a994b61abfab376db0f082e8c36f7fe5059ae6c",
+      "hash": "9b368ec58976805c5e454833282d2102deb1dd574f8e7d4b51f09f6df541ebcb",
       "title": "Managing accounts",
       "url": "/design/human-interface-guidelines/managing-accounts",
-      "updatedAt": "2026-08-16T09:29:22.820Z"
+      "updatedAt": "2026-10-06T07:18:51.054Z"
     },
     "collaboration-and-sharing": {
-      "hash": "ee192aad4f7349929ec0852d12c4960a1d0c7d1230ac500fd36b439974de0a7c",
+      "hash": "d0ada3159faf240e19f9e8081ec3fe1513c7d16a5147cd0b43479889b8f882cd",
       "title": "Collaboration and sharing",
       "url": "/design/human-interface-guidelines/collaboration-and-sharing",
-      "updatedAt": "2026-08-16T09:29:22.821Z"
+      "updatedAt": "2026-10-06T07:18:51.052Z"
     },
     "multitasking": {
       "hash": "8ffd189e5510f619510f39fdaf6ceb3424a1c7f8c1a747babd69fa59312a9ccf",
@@ -511,10 +511,10 @@
       "updatedAt": "2026-08-16T09:29:22.822Z"
     },
     "right-to-left": {
-      "hash": "c372d3af2da50c006be5825ffffe07abe1b486145b425a9c7c275bd5ae2d917a",
+      "hash": "7787f3a57d9ef8f64bab4452c8d0982aa008aea0e00dcd8038f7faae8cf58bd1",
       "title": "Right to left",
       "url": "/design/human-interface-guidelines/right-to-left",
-      "updatedAt": "2026-08-16T09:29:22.823Z"
+      "updatedAt": "2026-10-06T07:18:51.054Z"
     },
     "voiceover": {
       "hash": "2df71bc92a655121c1057e78c8a960496336380e38c70b65f84507abc2db9cac",
@@ -523,10 +523,10 @@
       "updatedAt": "2026-08-16T09:29:22.824Z"
     },
     "privacy": {
-      "hash": "0cbb293ce2884efda6ad931692bebed7fbf2219258f69405fec749cf0265c527",
+      "hash": "7d27104753d909e8c88a58e04b08f9768f0b3c18c21c1597c2bab9b6cdd1f0c9",
       "title": "Privacy",
       "url": "/design/human-interface-guidelines/privacy",
-      "updatedAt": "2026-08-16T09:29:22.824Z"
+      "updatedAt": "2026-10-06T07:18:51.063Z"
     },
     "in-app-purchase": {
       "hash": "7d3e6eb72cb9133e6058c92d2888671957132e145fee0aeba6427ebfaf846b18",
@@ -709,10 +709,10 @@
       "updatedAt": "2026-08-16T09:29:22.844Z"
     },
     "shareplay": {
-      "hash": "d43834357fd2d93d3b0ef7a311a12daca0011bdcfda0e3dbea186192a6607f76",
+      "hash": "0698664fc0311ec45acadc9b4f3e667b1fc45a81c74a07a416c959d56ed8d0d3",
       "title": "SharePlay",
       "url": "/design/human-interface-guidelines/shareplay",
-      "updatedAt": "2026-08-16T09:29:22.845Z"
+      "updatedAt": "2026-10-06T07:18:51.044Z"
     },
     "apple-pencil-and-scribble": {
       "hash": "e85344c426111fdfa38bc758fb52ded903bdaaf056c3b4ba6e84457835720759",
@@ -763,10 +763,10 @@
       "updatedAt": "2026-08-16T09:29:22.851Z"
     },
     "apple-pay": {
-      "hash": "c71d0a9781ca180fb96d53cd1c11241a0bb023d500e3b28cd1654ac0c1a49f77",
+      "hash": "b29f8462d969f60fb2d70439c19ec3f0c4ee113d6df111d03475c36d3b304eb5",
       "title": "Apple Pay",
       "url": "/design/human-interface-guidelines/apple-pay",
-      "updatedAt": "2026-08-16T09:29:22.860Z"
+      "updatedAt": "2026-10-06T07:18:51.056Z"
     },
     "tap-to-pay-on-iphone": {
       "hash": "ee1759e19a572b057cc0b8fc145b358a7fdb0ef02ff6d4ae26a5d37cfdd74df5",
@@ -793,10 +793,10 @@
       "updatedAt": "2026-08-16T09:29:22.868Z"
     },
     "wallet": {
-      "hash": "63db7ab8a188bcedae047ce1cacb6a85dd99a04760d8dfe58da71459f921077d",
+      "hash": "d33801de8ba0d95bb85f60d2471c9e94f0c9f488cbff3490e26a81d3e428d99a",
       "title": "Wallet",
       "url": "/design/human-interface-guidelines/wallet",
-      "updatedAt": "2026-08-16T09:29:22.872Z"
+      "updatedAt": "2026-10-06T07:18:51.061Z"
     },
     "complications": {
       "hash": "ee714755e6f0264e05cf57b5774c550043526325f4046dda8ced8b19700d9d5e",
@@ -1031,10 +1031,22 @@
       "title": "Charts",
       "url": "/design/human-interface-guidelines/charts",
       "updatedAt": "2026-08-16T09:29:22.893Z"
+    },
+    "designing-for-iphone-duo": {
+      "hash": "cd750d65f59469da6dbcb1bfd9935ef7437c5b89189c40a5af013d3525807407",
+      "title": "Designing for iPhone Duo",
+      "url": "/design/human-interface-guidelines/designing-for-iphone-duo",
+      "updatedAt": "2026-10-06T07:18:51.043Z"
+    },
+    "apple-in-app-purchase": {
+      "hash": "c5bc3c178a422cd32bd9e01770354eabb90d416ca7b3842420f52e4b9712e09b",
+      "title": "Apple In-App Purchase",
+      "url": "/design/human-interface-guidelines/apple-in-app-purchase",
+      "updatedAt": "2026-10-06T07:18:51.044Z"
     }
   },
   "images": {},
-  "lastSync": "2026-08-16T09:29:37.664Z",
-  "totalPages": 172,
+  "lastSync": "2026-10-06T07:18:51.067Z",
+  "totalPages": 174,
   "totalImages": 0
 }
