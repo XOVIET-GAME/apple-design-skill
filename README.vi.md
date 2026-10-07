@@ -6,7 +6,7 @@
 
 [![skills.sh](https://img.shields.io/badge/skills.sh-standard-blue?style=flat-square)](https://skills.sh)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg?style=flat-square)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/billythekidz/apple-design-skill?style=flat-square)](https://github.com/billythekidz/apple-design-skill)
+[![GitHub stars](https://img.shields.io/github/stars/XOVIET-GAME/apple-design-skill?style=flat-square)](https://github.com/XOVIET-GAME/apple-design-skill)
 
 [English](README.md) | **Tiếng Việt**
 
@@ -23,7 +23,7 @@ Trang bị toàn bộ triết lý thiết kế **Apple Human Interface Guideline
 **`apple-design-skill`** là gói kỹ năng mã nguồn mở theo chuẩn **`skills.sh` / Vercel Labs (`npx skills`)** giúp các AI Agent (Claude Code, Antigravity, Codex, Cursor, GitHub Copilot, Windsurf, Cline, Roo-Code, v.v.) tự động nắm vững và áp dụng các tiêu chuẩn thiết kế đỉnh cao của Apple khi viết mã giao diện (Web, iOS, macOS, visionOS).
 
 ### ✨ Điểm nổi bật:
-- 📖 **172 Tài liệu HIG chi tiết**: Toàn bộ tài liệu chính thức từ Apple Developer được chuyển đổi sang Markdown chuẩn, kèm **451+ hình ảnh minh họa Retina** lưu offline.
+- 📖 **179 Tài liệu HIG chi tiết**: Toàn bộ tài liệu chính thức từ Apple Developer được chuyển đổi sang Markdown chuẩn, kèm **451+ hình ảnh minh họa Retina** lưu offline.
 - 🎨 **Bộ Design Tokens & Components dựng sẵn**: CSS Variables, Tailwind CSS Preset, và các mẫu component (Nút bấm, Thẻ kính mờ, Inset Grouped, Segmented Controls).
 - 🚫 **Loại bỏ Anti-Patterns**: Cấm màu tím trên nền đen, cấm bóng đổ đen đục, cấm bo góc sắc nhọn, cấm touch target < 44pt.
 - 🔍 **Audit Tool tự động**: CLI tool tích hợp sẵn giúp kiểm tra mã nguồn, tính tương phản màu WCAG, kiểm tra kích thước vùng chạm và chấm điểm theo thang điểm 0–100.
@@ -36,7 +36,7 @@ Cài đặt ở phạm vi toàn cục (`-g`) để kỹ năng có hiệu lực n
 
 ### 🌟 Cách nhanh nhất: Cài đặt cho TẤT CẢ Agents cùng lúc
 ```bash
-npx skills add billythekidz/apple-design-skill --all -g
+npx skills add XOVIET-GAME/apple-design-skill --all -g
 ```
 
 ---
@@ -46,55 +46,81 @@ npx skills add billythekidz/apple-design-skill --all -g
 #### 1. Claude Code
 Cài đặt vào thư mục cấu hình toàn cục của Claude Code (`~/.claude/skills/apple-design`):
 ```bash
-npx skills add billythekidz/apple-design-skill -a claude-code -g
+npx skills add XOVIET-GAME/apple-design-skill -a claude-code -g
 ```
 *Cách clone git thủ công (nếu không dùng npx):*
 ```bash
 # macOS / Linux
-git clone https://github.com/billythekidz/apple-design-skill.git ~/.claude/skills/apple-design
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git ~/.claude/skills/apple-design
 
 # Windows (PowerShell)
-git clone https://github.com/billythekidz/apple-design-skill.git $HOME\.claude\skills\apple-design
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git $HOME\.claude\skills\apple-design
 ```
 
 #### 2. Google Antigravity / Gemini CLI
 Cài đặt vào thư mục kĩ năng toàn cục của Google Antigravity (`~/.gemini/antigravity-cli/skills/apple-design`):
 ```bash
-npx skills add billythekidz/apple-design-skill -a antigravity -g
+npx skills add XOVIET-GAME/apple-design-skill -a antigravity -g
 ```
 *Cách clone git thủ công:*
 ```bash
 # macOS / Linux
-git clone https://github.com/billythekidz/apple-design-skill.git ~/.gemini/antigravity-cli/skills/apple-design
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git ~/.gemini/antigravity-cli/skills/apple-design
 
 # Windows (PowerShell)
-git clone https://github.com/billythekidz/apple-design-skill.git $HOME\.gemini\antigravity-cli\skills\apple-design
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git $HOME\.gemini\antigravity-cli\skills\apple-design
 ```
 
 #### 3. OpenAI Codex (Codex CLI)
 Cài đặt vào kho kỹ năng toàn cục của Codex (`~/.codex/skills/apple-design`):
 ```bash
-npx skills add billythekidz/apple-design-skill -a codex -g
+npx skills add XOVIET-GAME/apple-design-skill -a codex -g
 ```
 *Cách clone git thủ công:*
 ```bash
 # macOS / Linux
-git clone https://github.com/billythekidz/apple-design-skill.git ~/.codex/skills/apple-design
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git ~/.codex/skills/apple-design
 
 # Windows (PowerShell)
-git clone https://github.com/billythekidz/apple-design-skill.git $HOME\.codex\skills\apple-design
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git $HOME\.codex\skills\apple-design
 ```
 
-#### 4. Các trợ lý AI khác (Cursor, Copilot, Windsurf, Cline)
+#### 4. Oh My Pi (OMP)
+
+Đảm bảo đã cài **[Bun](https://bun.sh)** (bắt buộc cho trình cài đặt OMP):
+```bash
+# Cài Bun nếu máy chưa có
+# macOS / Linux
+curl -fsSL https://bun.sh/install | bash
+
+# Windows (PowerShell)
+powershell -c "irm bun.sh/install.ps1 | iex"
+```
+
+Sau đó cài skill trực tiếp bằng `omp install`:
+
+```bash
+# Cách A: Cài từ thư mục repository local
+omp install ./path/to/apple-design-skill
+
+# Cách B: Clone git thủ công
+# macOS / Linux
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git ~/.config/omp/skills/apple-design
+
+# Windows (PowerShell)
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git $HOME\.config\omp\skills\apple-design
+```
+
+#### 5. Các trợ lý AI khác (Cursor, Copilot, Windsurf, Cline)
 ```bash
 # Cursor
-npx skills add billythekidz/apple-design-skill -a cursor -g
+npx skills add XOVIET-GAME/apple-design-skill -a cursor -g
 
 # GitHub Copilot CLI / Extension
-npx skills add billythekidz/apple-design-skill -a copilot -g
+npx skills add XOVIET-GAME/apple-design-skill -a copilot -g
 
 # Windsurf / Cline / Roo-Code
-npx skills add billythekidz/apple-design-skill -a windsurf -g
+npx skills add XOVIET-GAME/apple-design-skill -a windsurf -g
 ```
 
 ---
@@ -145,7 +171,7 @@ node skills/apple-design/scripts/audit-apple-design.mjs target 32 32
 # 4. Kiểm tra hàng loạt qua file JSON (Batch verification):
 node skills/apple-design/scripts/audit-apple-design.mjs batch audit.json
 
-# 5. Cập nhật / tải lại toàn bộ 172 tài liệu & 451 hình ảnh HIG từ Apple CDN:
+# 5. Cập nhật / tải lại toàn bộ 179 tài liệu & 451 hình ảnh HIG từ Apple CDN:
 npm run fetch-hig
 ```
 
@@ -166,7 +192,7 @@ apple-design-skill/
 ├── skills/
 │   └── apple-design/
 │       ├── SKILL.md                 # Quy tắc cốt lõi & Trigger định hướng cho Agent
-│       ├── references/              # 172 tài liệu HIG chi tiết + INDEX.md + Thư mục ảnh offline
+│       ├── references/              # 179 tài liệu HIG chi tiết + Thư mục ảnh offline
 │       ├── assets/                  # apple-tokens.css, apple-components.css, tailwind preset, SwiftUI
 │       ├── templates/               # apple-hig-audit-scorecard.md
 │       └── scripts/                 # audit-apple-design.mjs, fetch-apple-hig.mjs
@@ -184,4 +210,4 @@ apple-design-skill/
 
 ## 📄 License
 
-Phát hành theo giấy phép [MIT](LICENSE) bởi [@billythekidz](https://github.com/billythekidz).
+Phát hành theo giấy phép [MIT](LICENSE) bởi [@XOVIET-GAME](https://github.com/XOVIET-GAME).

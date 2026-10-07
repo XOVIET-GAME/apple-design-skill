@@ -6,7 +6,7 @@
 
 [![skills.sh](https://img.shields.io/badge/skills.sh-standard-blue?style=flat-square)](https://skills.sh)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg?style=flat-square)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/billythekidz/apple-design-skill?style=flat-square)](https://github.com/billythekidz/apple-design-skill)
+[![GitHub stars](https://img.shields.io/github/stars/XOVIET-GAME/apple-design-skill?style=flat-square)](https://github.com/XOVIET-GAME/apple-design-skill)
 
 **English** | [Tiếng Việt](README.vi.md)
 
@@ -23,7 +23,7 @@ Equip any AI Coding Agent with official **Apple Human Interface Guidelines (HIG)
 **`apple-design-skill`** is an open-standard agent skill built on the **`skills.sh` / Vercel Labs (`npx skills`)** specification. It enables AI coding assistants (Claude Code, Antigravity, Codex, Cursor, GitHub Copilot, Windsurf, Cline, Roo-Code, etc.) to accurately design, implement, and audit Apple-grade interfaces across Web, iOS, iPadOS, macOS, watchOS, and visionOS.
 
 ### ✨ Highlights:
-- 📖 **172 Complete HIG Reference Docs**: Official Apple Developer guidelines converted into clean Markdown with **451+ local Retina illustrations**.
+- 📖 **179 Complete HIG Reference Docs**: Official Apple Developer guidelines converted into clean Markdown with **451+ local Retina illustrations**.
 - 🎨 **Code-Ready Design Tokens & Presets**: CSS Variables, Tailwind CSS Preset, and pre-built components (Filled/Tinted Buttons, Frosted Glass Cards, Inset Grouped Lists, Segmented Controls, Sheets).
 - 🚫 **Strict Anti-Pattern Enforcement**: Eliminates cliché tropes (e.g. purple-on-dark neon glow, harsh undiffused shadows, touch targets < 44pt).
 - 🔍 **Automated 0–100 HIG Audit Engine**: Built-in CLI tool for codebase linting, WCAG relative luminance contrast calculation, touch target verification, and structured scorecard generation.
@@ -36,7 +36,7 @@ Install globally so the skill is instantly active across **all projects and work
 
 ### 🌟 Quick Install: All Agents at Once (Global)
 ```bash
-npx skills add billythekidz/apple-design-skill -g
+npx skills add XOVIET-GAME/apple-design-skill -g
 ```
 
 ---
@@ -46,55 +46,81 @@ npx skills add billythekidz/apple-design-skill -g
 #### 1. Claude Code
 Install to global user configuration (`~/.claude/skills/apple-design`):
 ```bash
-npx skills add billythekidz/apple-design-skill -a claude-code -g
+npx skills add XOVIET-GAME/apple-design-skill -a claude-code -g
 ```
 *Manual git clone alternative:*
 ```bash
 # macOS / Linux
-git clone https://github.com/billythekidz/apple-design-skill.git ~/.claude/skills/apple-design
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git ~/.claude/skills/apple-design
 
 # Windows (PowerShell)
-git clone https://github.com/billythekidz/apple-design-skill.git $HOME\.claude\skills\apple-design
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git $HOME\.claude\skills\apple-design
 ```
 
 #### 2. Google Antigravity / Gemini CLI
 Install to global Antigravity customization directory (`~/.gemini/antigravity-cli/skills/apple-design`):
 ```bash
-npx skills add billythekidz/apple-design-skill -a antigravity -g
+npx skills add XOVIET-GAME/apple-design-skill -a antigravity -g
 ```
 *Manual git clone alternative:*
 ```bash
 # macOS / Linux
-git clone https://github.com/billythekidz/apple-design-skill.git ~/.gemini/antigravity-cli/skills/apple-design
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git ~/.gemini/antigravity-cli/skills/apple-design
 
 # Windows (PowerShell)
-git clone https://github.com/billythekidz/apple-design-skill.git $HOME\.gemini\antigravity-cli\skills\apple-design
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git $HOME\.gemini\antigravity-cli\skills\apple-design
 ```
 
 #### 3. Codex (OpenAI Codex CLI)
 Install to global Codex skills repository (`~/.codex/skills/apple-design`):
 ```bash
-npx skills add billythekidz/apple-design-skill -a codex -g
+npx skills add XOVIET-GAME/apple-design-skill -a codex -g
 ```
 *Manual git clone alternative:*
 ```bash
 # macOS / Linux
-git clone https://github.com/billythekidz/apple-design-skill.git ~/.codex/skills/apple-design
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git ~/.codex/skills/apple-design
 
 # Windows (PowerShell)
-git clone https://github.com/billythekidz/apple-design-skill.git $HOME\.codex\skills\apple-design
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git $HOME\.codex\skills\apple-design
 ```
 
-#### 4. Other AI Assistants (Cursor, GitHub Copilot, Windsurf, Cline)
+#### 4. Oh My Pi (OMP)
+
+Ensure **[Bun](https://bun.sh)** is installed (required by OMP's installer engine):
+```bash
+# Install Bun (if not already installed)
+# macOS / Linux
+curl -fsSL https://bun.sh/install | bash
+
+# Windows (PowerShell)
+powershell -c "irm bun.sh/install.ps1 | iex"
+```
+
+Then install the skill directly via `omp install`:
+
+```bash
+# Option A: Install from local repository folder
+omp install ./path/to/apple-design-skill
+
+# Option B: Manual git clone alternative
+# macOS / Linux
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git ~/.config/omp/skills/apple-design
+
+# Windows (PowerShell)
+git clone https://github.com/XOVIET-GAME/apple-design-skill.git $HOME\.config\omp\skills\apple-design
+```
+
+#### 5. Other AI Assistants (Cursor, GitHub Copilot, Windsurf, Cline)
 ```bash
 # Cursor
-npx skills add billythekidz/apple-design-skill -a cursor -g
+npx skills add XOVIET-GAME/apple-design-skill -a cursor -g
 
 # GitHub Copilot CLI / Extension
-npx skills add billythekidz/apple-design-skill -a copilot -g
+npx skills add XOVIET-GAME/apple-design-skill -a copilot -g
 
 # Windsurf / Cline / Roo-Code
-npx skills add billythekidz/apple-design-skill -a windsurf -g
+npx skills add XOVIET-GAME/apple-design-skill -a windsurf -g
 ```
 
 ---
@@ -149,7 +175,7 @@ node skills/apple-design/scripts/audit-apple-design.mjs target 32 32
 # 4. Run batch JSON checks:
 node skills/apple-design/scripts/audit-apple-design.mjs batch audit.json
 
-# 5. Fetch / update all 172 documentation pages and 451 images from Apple CDN:
+# 5. Fetch / update all 179 documentation pages and 451 images from Apple CDN:
 npm run fetch-hig
 ```
 
@@ -170,7 +196,7 @@ apple-design-skill/
 ├── skills/
 │   └── apple-design/
 │       ├── SKILL.md                 # Core instructions & trigger rules for AI agents
-│       ├── references/              # 172 comprehensive HIG markdown docs + INDEX.md + local images
+│       ├── references/              # 179 comprehensive HIG markdown docs + local images
 │       ├── assets/                  # apple-tokens.css, apple-components.css, tailwind preset, SwiftUI
 │       ├── templates/               # apple-hig-audit-scorecard.md
 │       └── scripts/                 # audit-apple-design.mjs, fetch-apple-hig.mjs
@@ -188,4 +214,4 @@ apple-design-skill/
 
 ## 📄 License
 
-Released under the [MIT License](LICENSE) by [@billythekidz](https://github.com/billythekidz).
+Released under the [MIT License](LICENSE) by [@XOVIET-GAME](https://github.com/XOVIET-GAME).
