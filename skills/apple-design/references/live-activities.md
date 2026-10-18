@@ -16,7 +16,7 @@ Live Activities let people keep track of tasks and events in glanceable location
 
 For example, a Live Activity might show the remaining time until a food delivery order arrives, live in-game information for a soccer match, or real-time fitness metrics and interactive controls to pause or cancel a workout.
 
-Live Activities start on iPhone or iPad and automatically appear in system locations across a person’s devices:
+A Live Activity from your app starts on iPad or iPhone and automatically appears in system locations across a person’s devices:
 
 |   |   |   |
 | --- | --- | --- |
@@ -28,7 +28,7 @@ Live Activities start on iPhone or iPad and automatically appear in system locat
 
 ## Anatomy
 
-Live Activities appear across the system in various locations like the *Dynamic Island* and the Lock Screen. It serves as a unified home for alerts and indicators of ongoing activity. Depending on the device and system location where a Live Activity appears, the system chooses a *presentation* style or a combination of styles to compose the appearance of your Live Activity. As a result, your Live Activity must support:
+Live Activities appear across the system in various locations like the Dynamic Island and the Lock Screen. Depending on the device and system location where a Live Activity appears, the system chooses a *presentation* style or a combination of styles to compose the appearance of your Live Activity. As a result, your Live Activity must support:
 
 - [Compact](https://developer.apple.com/design/human-interface-guidelines/live-activities#Compact)
 - [Minimal](https://developer.apple.com/design/human-interface-guidelines/live-activities#Minimal)
@@ -51,7 +51,7 @@ For design guidance, see [Compact presentation](https://developer.apple.com/desi
 
 ### Minimal
 
-When multiple Live Activities are active, the system uses the minimal presentation to display two of them in the Dynamic Island. One appears attached to the Dynamic Island while the other appears detached. Depending on its content size, the detached minimal presentation appears circular or oval. As with the compact presentation, people tap the minimal presentation to open its app or touch and hold it to see the expanded presentation.
+When multiple Live Activities are active, the system uses the minimal presentation to display up to three of them in the Dynamic Island. One appears attached to the Dynamic Island, while a second (and third, when supported) appear detached on one or both sides. Depending on its content size, a detached minimal presentation appears circular or oval. As with the compact presentation, people tap the minimal presentation to open its app or touch and hold it to see the expanded presentation.
 
 
 
@@ -129,7 +129,9 @@ For design guidance, see [StandBy presentation](https://developer.apple.com/desi
 
 **Adjust element size and placement for efficient use of space.** Create a layout that only uses the space you need to clearly display its content. Adapt the size and placement of elements in your Live Activity so they fit well together.
 
-**Use familiar layouts for custom views and layouts.** Templates with default system margins and recommended text sizes are available in [Apple Design Resources](https://developer.apple.com/design/resources/). Using them helps your Live Activity remain legible at a glance and fit in with the visual language of its surroundings; for example, the Smart Stack on Apple Watch.
+**Support limited width presentations.** To avoid truncated text in contexts with limited width like the Dynamic Island on iPhone in landscape, adapt your compact and minimal presentations to fit inside a 28pt-diameter circle. Use a short abbreviation or graphic representation instead of a full text string. If limited width versions of both the leading and trailing compact views don’t make sense for your design, adopt a leading view only and leave the trailing view empty; the system automatically hides the trailing view. For developer guidance, see [isDynamicIslandLimitedInWidth](https://developer.apple.com/documentation/swiftui/environmentvalues/isdynamicislandlimitedinwidth).
+
+**Use familiar layouts for custom views.** Templates with default system margins and recommended text sizes are available in [Apple Design Resources](https://developer.apple.com/design/resources/). Using them helps your Live Activity remain legible at a glance and fit in with the visual language of its surroundings; for example, the Smart Stack on Apple Watch.
 
 
 
@@ -137,7 +139,7 @@ For design guidance, see [StandBy presentation](https://developer.apple.com/desi
 
 
 
-**Use consistent margins and concentric placement.** Use even, matching margins between rounded shapes and the edges of the Live Activity, including corners, to ensure a harmonious fit. This prevents elements from poking into the rounded shape of the Live Activity and creating visual tension. For example, when placing a rounded rectangle near a corner of your Live Activity, match its corner radius to the outer corner radius of the Live Activity by subtracting the margin and using a SwiftUI container to apply the correct corner radius. For developer guidance, see [ContainerRelativeShape](https://developer.apple.com/documentation/swiftui/containerrelativeshape).
+**Use consistent margins and concentric placement.** Use even, matching margins between rounded shapes and the edges of the Live Activity to ensure a harmonious fit. This prevents elements from poking into the rounded shape of the Live Activity and creating visual tension. When you place a rounded element near the corner of a Live Activity, use [ContainerRelativeShape](https://developer.apple.com/documentation/swiftui/containerrelativeshape) to match the corner radius of the Live Activity instead of hard-coding a value for it.
 
 
 
@@ -292,7 +294,7 @@ If you offer a watchOS app and someone taps the Live Activity in the Smart Stack
 
 ## Specifications
 
-When you design your Live Activities, use the following values for guidance.
+When you design your Live Activities, use the following values for guidance. All values listed in the tables below are in points.
 
 ### CarPlay dimensions
 
@@ -316,51 +318,13 @@ Test your designs with the CarPlay simulator and the following configurations fo
 
 ### iOS dimensions
 
-All values listed in the tables below are in points.
-
 |   |   |   |
 | --- | --- | --- |
 |   |   |   |   |   |   |
 |   |   |   |   |   |   |
 |   |   |   |   |   |   |
-
-The Dynamic Island uses a corner radius of 44 points, and its rounded corner shape matches the TrueDepth camera.
-
-|   |   |   |
-| --- | --- | --- |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
 
 ### iPadOS dimensions
-
-All values listed in the table below are in points.
 
 |   |   |   |
 | --- | --- | --- |
@@ -387,6 +351,9 @@ Live Activities in the Smart Stack use the same dimensions as watchOS widgets.
 |   |   |
 |   |   |
 |   |   |
+|   |   |
+|   |   |
+|   |   |
 
 ## Resources
 
@@ -406,6 +373,7 @@ Live Activities in the Smart Stack use the same dimensions as watchOS widgets.
 
 |   |   |   |
 | --- | --- | --- |
+|   |   |
 |   |   |
 |   |   |
 |   |   |

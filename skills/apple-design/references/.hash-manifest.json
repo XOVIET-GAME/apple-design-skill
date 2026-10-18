@@ -265,10 +265,10 @@
       "updatedAt": "2026-08-16T09:29:22.785Z"
     },
     "carplay": {
-      "hash": "de3749245614119d17b50628b4367fa558fcffe821fd058a850402a3401d5416",
+      "hash": "99a58155c66f09a54ecef926fea414905e88182432689928abbf0355b099f164",
       "title": "CarPlay",
       "url": "/design/human-interface-guidelines/carplay",
-      "updatedAt": "2026-08-16T09:29:22.786Z"
+      "updatedAt": "2026-10-18T01:49:20.032Z"
     },
     "sf-symbols": {
       "hash": "e4d547b0a771f3c84781ad4c5b1b985458c132d7fd3f4b340b47a0262f21767a",
@@ -361,10 +361,10 @@
       "updatedAt": "2026-08-16T09:29:22.798Z"
     },
     "widgets": {
-      "hash": "2b6a6ff55982a9d399726ba8c57ac82159635c7322c6ad10c832eadcc65ac7b7",
+      "hash": "4cce2981e68f0a23befa3e588ae203e23eb15c0c0639b943fad94935cb54d9d4",
       "title": "Widgets",
       "url": "/design/human-interface-guidelines/widgets",
-      "updatedAt": "2026-08-16T09:29:22.799Z"
+      "updatedAt": "2026-10-18T01:49:20.027Z"
     },
     "entering-data": {
       "hash": "cc461b3ac6eab2812d8967f3f58d197a75cfadf4f36f5a3cc2b934a53125ee10",
@@ -847,10 +847,10 @@
       "updatedAt": "2026-08-16T09:29:22.877Z"
     },
     "live-activities": {
-      "hash": "ba99c8214bb2a5b6615c1780684aa854459e0308c88e31fd4c2a94d65a00a3d0",
+      "hash": "da22182e1f73930aab91744cca0a6ccf25d9249ebd216934110643a0a84136a8",
       "title": "Live Activities",
       "url": "/design/human-interface-guidelines/live-activities",
-      "updatedAt": "2026-08-16T09:29:22.878Z"
+      "updatedAt": "2026-10-18T01:49:20.038Z"
     },
     "progress-indicators": {
       "hash": "ebf3de684e581c9c8eeabf73499b52051e2d18665dcaa056d7926a9b111179f7",
@@ -1046,7 +1046,7 @@
     }
   },
   "images": {},
-  "lastSync": "2026-10-11T02:32:33.206Z",
+  "lastSync": "2026-10-18T01:49:20.038Z",
   "totalPages": 174,
   "totalImages": 0
 }
