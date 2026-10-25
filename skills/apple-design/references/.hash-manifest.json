@@ -13,10 +13,10 @@
       "updatedAt": "2026-08-16T09:29:22.751Z"
     },
     "designing-for-ios": {
-      "hash": "2b3c385a09458016d00d8e26d63e580de34e9119335a327c34cfdb098d187617",
+      "hash": "d8a885bce32793b7947d56e541c452f6b304a78dbd41c90da28ef981b54fd333",
       "title": "Designing for iOS",
       "url": "/design/human-interface-guidelines/designing-for-ios",
-      "updatedAt": "2026-08-16T09:29:22.752Z"
+      "updatedAt": "2026-10-25T02:00:45.394Z"
     },
     "foundations": {
       "hash": "2d1b722b80c36263f8944aff8af71754b478ff8d90be157901ebcb7135b42d43",
@@ -1046,7 +1046,7 @@
     }
   },
   "images": {},
-  "lastSync": "2026-10-18T01:49:20.038Z",
+  "lastSync": "2026-10-25T02:00:45.410Z",
   "totalPages": 174,
   "totalImages": 0
 }
