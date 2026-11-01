@@ -22,7 +22,7 @@ Your app icon is a crucial aspect of your app’s or game’s branding and user 
 
 ## Layer design
 
-Although you can provide a flattened image for your icon, layers give you the most control over how your icon design is represented. A layered app icon comes together to produce a sense of depth and vitality. On each platform, the system applies visual effects that respond to the environment and people’s interactions.
+Although you can provide a nonlayered image for your icon (see [Icon formats](https://developer.apple.com/design/human-interface-guidelines/app-icons#Icon-formats)), layers give you the most control over how your icon design is represented. A layered app icon comes together to produce a sense of depth and vitality. On each platform, the system applies visual effects that respond to the environment and people’s interactions.
 
 iOS, iPadOS, macOS, and watchOS app icons include a background layer and one or more foreground layers that coalesce to create dimensionality. These icons take on Liquid Glass attributes like specular highlights, refraction, and translucency. These effects automatically adapt with the size of your icon, apply consistently across platforms, and can appear differently between system versions.
 
@@ -47,6 +47,14 @@ For tvOS and visionOS app icons, you add your icon layers directly to an image s
 **Design a background that both stands out and emphasizes foreground content.** If you choose a gradient for your background layer, ensure that it responds well to system lighting effects. Icon Composer supports solid colors and gradients for background layers, making it unnecessary to import custom background images in most cases. If you do import a background layer, make sure it’s full-bleed and opaque.
 
 **Prefer vector graphics when bringing layers into Icon Composer.** Unlike raster images, vector graphics (such as SVG or PDF) scale gracefully and appear crisp at any size. Outline artwork and convert text to outline in your design. For mesh gradients and raster artwork, prefer PNG format because it’s a lossless image format.
+
+## Icon formats
+
+In iOS, iPadOS, macOS, and watchOS, you can provide icons in one of two formats: nonlayered bitmap images (such as PNG) or layered Icon Composer files. The Icon Composer format lets you control how Liquid Glass applies to individual elements of your icon, and how color applies across appearance variants.
+
+**Provide your icon in the Icon Composer format for more flexibility and control.** If you provide a bitmap image instead, the system attempts to segment your icon, isolating the foreground elements from the background to create an icon with two layers. These two layers help make your icon compatible with dark and tinted appearance variants, ensuring the use of a consistent background.
+
+When the system segments your icon, it applies Liquid Glass effects to foreground layers that feature large, simple shapes. It doesn’t automatically apply Liquid Glass effects to smaller, more complex elements in an icon like text and thin lines. To control precisely which elements receive Liquid Glass properties, supply your icon as a layered Icon Composer file.
 
 ## Icon shape
 
@@ -165,6 +173,7 @@ App icons support the following color spaces:
 
 |   |   |   |
 | --- | --- | --- |
+|   |   |
 |   |   |
 |   |   |
 |   |   |

@@ -34,7 +34,7 @@ People appreciate the precision and flexibility that pointing devices offer. On 
 
 iPadOS builds on the traditional pointer experience, automatically adapting the pointer to the current context and providing rich visual feedback at a level of precision that enhances productivity and simplifies common tasks on a touchscreen device. The iPadOS pointing system gives people an additional way to interact with apps and content — it doesn’t replace touch.
 
-**Allow multiple selection in custom views when necessary.** In iPadOS 15 and later, people can click and drag the pointer over multiple items to select them. As people use the pointer in this way, it expands into a visible rectangle that selects the items it encompasses. Standard nonlist collection views support this interaction by default; if you want to support multiple selection in custom views, you need to implement it yourself. For developer guidance, see [UIBandSelectionInteraction](https://developer.apple.com/documentation/uikit/uibandselectioninteraction).
+**Allow multiple selection in custom views when necessary.** When someone clicks and drags the pointer over multiple items to select them, the pointer expands into a visible rectangle that encompasses the selection. Standard nonlist collection views support this interaction by default; if you want to support multiple selection in custom views, you need to implement it yourself. For developer guidance, see [UIBandSelectionInteraction](https://developer.apple.com/documentation/uikit/uibandselectioninteraction).
 
 **Distinguish between pointer and finger input only if it provides value.** For example, a scrubber can give people an additional way to target a location in a video when they’re using the pointer. In this scenario, people can drag the playhead using either the pointer or touch, but they can use the pointer to click a precise seek destination.
 
@@ -42,15 +42,13 @@ iPadOS builds on the traditional pointer experience, automatically adapting the 
 
 iPadOS integrates the appearance and behavior of both the pointer and the element it moves over, bringing focus to the item the pointer is targeting. You can support the system-provided pointer effects or modify them to suit your experience.
 
-By default, the pointer’s shape is a circle, but it can display a system-defined or custom shape when people move it over specific elements or regions. For example, the pointer automatically uses the familiar I-beam shape when people move it over a text-entry area.
+By default, the pointer’s shape is an arrow, but it can display a system-defined or custom shape when people move it over specific elements or regions. For example, the pointer automatically uses the familiar I-beam shape when people move it over a text-entry area.
 
-With a *content effect*, the UI element or region beneath the pointer can also change its appearance when people hold the pointer over it. Depending on the type of content effect, the pointer can retain its current shape or transform into a shape that integrates with the element’s new appearance.
+With a *content effect*, the UI element or region beneath the pointer can also change its appearance when people hold the pointer over it. iPadOS defines three content effects that bring focus to different types of interactive elements in your app: highlight, lift, and hover.
 
-iPadOS defines three content effects that bring focus to different types of interactive elements in your app: highlight, lift, and hover.
+The *highlight effect* materializes a Liquid Glass shape between the pointer and the control it’s moving over. The subtle highlighting and movement bring focus to the control without distracting people from their task. By default, iPadOS applies the highlight effect to bar buttons, tab bars, segmented controls, and edit menus.
 
-The *highlight* effect transforms the pointer into a translucent, rounded rectangle that acts as a background for a control and includes a gentle parallax. The subtle highlighting and movement bring focus to the control without distracting people from their task. By default, iPadOS applies the highlight effect to bar buttons, tab bars, segmented controls, and edit menus.
-
-The *lift* effect combines a subtle parallax with the appearance of elevation to make an element seem like it’s floating above the screen. As the pointer fades out beneath the element, iPadOS creates the illusion of lift by scaling the element up while adding a shadow below it and a soft specular highlight on top of it. By default, iPadOS applies the lift effect to app icons and to buttons in Control Center.
+The *lift effect* combines a subtle parallax with the appearance of elevation to make an element seem like it’s floating above the screen. When the pointer is over the element, iPadOS creates the illusion of lift by scaling the element up while adding a shadow below it and a soft specular highlight on top of it. By default, iPadOS applies the lift effect to standalone Liquid Glass controls, app icons, and buttons in Control Center.
 
 *Hover* is a generic effect that lets you apply custom scale, tint, or shadow values to an element as the pointer moves over it. The hover effect combines your custom values to bring focus to an item, but it doesn’t transform the default pointer shape.
 
@@ -64,33 +62,19 @@ Unlike pointer shapes and content effects, accessories are secondary items that 
 
 **Consider using the accessory transition to signal a change in an element’s state or behavior.** In addition to animating the appearance and disappearance of pointer accessories, the system also animates the transitions among accessory shapes and positions that can accompany content effects. For example, you could communicate that an add action has become unavailable by transitioning the pointer accessory from the `plus` symbol to the `circle.slash` symbol.
 
-#### Pointer magnetism
-
-iPadOS helps people use the pointer to target an element by making the element appear to attract the pointer. People can experience this magnetic effect when they move the pointer close to an element and when they flick the pointer toward an element.
-
-When people move the pointer close to an element, the system starts transforming the pointer’s shape as soon as it reaches the element’s hit region. Because an element’s hit region typically extends beyond its visible boundaries, the pointer begins to transform before it appears to touch the element itself, creating the illusion that the element is pulling the pointer toward it.
-
-When people flick the pointer toward an element, iPadOS examines the pointer’s trajectory to discover the element that’s the most likely target. When there’s an element in the pointer’s path, the system uses magnetism to pull the pointer toward the element’s center.
-
-By default, iPadOS applies magnetism to elements that use the lift effect (like app icons) and the highlight effect (like bar buttons), but not to elements that use hover. Because an element that supports hover doesn’t transform the default pointer shape, adding magnetism could be jarring and might make people feel that they’ve lost control of the pointer.
-
-The system also applies magnetism to text-entry areas, where it can help people avoid skipping to another line if they make unintended vertical movements while they’re selecting text.
-
 #### Standard pointers and effects
 
 **When possible, support the system-provided content effects.** People quickly become accustomed to the content effects they see throughout the system and generally expect their experience to apply to every app they use. To provide a consistent user experience, align your interactions with the design intent of each effect. Specifically:
 
-- Use highlight for a small element that has a transparent background.
-- Use lift for a small element that has an opaque background.
+- Use highlight for a group of controls placed within a Liquid Glass container.
+- Use lift for a standalone Liquid Glass control or a small element that has an opaque background.
 - Use hover for large elements and customize the scale, tint, and shadow attributes as needed (for guidance, see [Customizing pointers](https://developer.apple.com/design/human-interface-guidelines/pointing-devices#Customizing-pointers)).
 
 **Prefer the system-provided pointer appearances for standard buttons and text-entry areas.** You can help people feel more comfortable with your app when the pointer behaves in ways they expect.
 
 **Add padding around interactive elements to create comfortable hit regions.** You might need to experiment to determine the right size for an element’s hit region. If the hit region is too small, it can make people feel that they have to be extra precise when interacting with the element. On the other hand, when an element’s hit region is too large, people can feel that it takes a lot of effort to pull the pointer away from the element. In general, it works well to add about 12 points of padding around elements that include a bezel; for elements without a bezel, it works well to add about 24 points of padding around the element’s visible edges.
 
-**Create contiguous hit regions for custom bar buttons.** If there’s space between the hit regions of adjacent buttons in a bar, people may experience a distracting motion when the pointer reverts briefly to its default shape as it moves between buttons.
-
-**Specify the corner radius of a nonstandard element that receives the lift effect.** With the system-provided lift effect, the pointer transforms to match the element’s shape as it fades out. By default, the pointer uses the system-defined corner radius to transform into a rounded rectangle. If your element is a different shape — if it’s a circle, for example — you need to provide the radius so the pointer can animate seamlessly into the shape of the element. For developer guidance, see [UIPointerShape.roundedRect(_:radius:)](https://developer.apple.com/documentation/uikit/uipointershape-swift.enum/roundedrect(_:radius:)).
+**Create contiguous hit regions for custom bar buttons.** If there’s space between the hit regions of adjacent buttons in a bar, people may experience a distracting motion when the highlight shape briefly disappears as the pointer moves between buttons.
 
 #### Customizing pointers
 
@@ -163,6 +147,36 @@ macOS offers a variety of standard pointer styles, which your app can use to com
 |   |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+
+#### Touch support for hidden controls
+
+Some Mac apps reveal certain controls only when the pointer moves over them. These controls need another way to appear when someone uses touch on a Mac that supports it. For related guidance, see [Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures).
+
+**Decide which hidden controls need touch support.** Reserve touch support for essential controls. In general, don’t add touch support for features that display static information, like tooltips, or for features people can already use another way with touch. For example, someone can swipe to scroll a carousel, so there’s no need to reveal the navigation buttons that exist for mice without a scroll wheel. Avoid keeping hidden controls visible all the time just to accommodate touch.
+
+**Reveal a hidden control when someone taps its general location on a touch display.** Reveal only controls relevant to the content someone is working with; too many at once can overwhelm and distract people. Hide a control again when the person finishes with it, or after a few seconds if they don’t use it. Sidebars and the close button in a tabbed window are exceptions; see the guidance below.
+
+**Retain the current selection when revealing a hidden control.** In a view that supports selection, keep the current selection when someone taps the area of a hidden control to reveal it, and when they then tap the revealed control. The control might act on the selection, and changing it would force people to select again.
+
+**Make essential hidden controls available in a context menu.** A context menu gives people a dependable way to reach a control without finding the spot where it appears. Include the controls people need most, and keep the menu short. Someone who uses touch can open a context menu with a touch and hold. For guidance, see [Context menus](https://developer.apple.com/design/human-interface-guidelines/context-menus).
+
+**In a sidebar, reveal hidden controls when someone taps the corresponding section header or row.** A tap performs the same action as a click, like expanding or collapsing a section or selecting a row. For example, tapping the Favorites header in the Finder sidebar collapses the section and reveals a disclosure button. Reveal only the controls for the tapped item, and keep them visible until touch moves outside the sidebar or someone uses a pointing device again. If someone taps the area of a hidden control, reveal the control without activating it. The control acts only when they tap it again.
+
+**In a tabbed window, reveal the selected tab’s close button when someone taps anywhere in the window.** Keep the button visible until they resume using a pointing device. If someone closes the selected tab while still using touch, show the close button on the newly selected tab.
 
 ### visionOS
 
@@ -188,12 +202,11 @@ When people use an attached pointing device that supports gestures, like a track
 
 [Mouse, Keyboard, and Trackpad](https://developer.apple.com/documentation/appkit/mouse-keyboard-and-trackpad) — AppKit
 
-#### Videos
-
 ## Change log
 
 |   |   |   |
 | --- | --- | --- |
+|   |   |
 |   |   |
 |   |   |
 

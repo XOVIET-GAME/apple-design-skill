@@ -73,10 +73,10 @@
       "updatedAt": "2026-08-16T09:29:22.760Z"
     },
     "designing-for-macos": {
-      "hash": "c2bfba02997561faee592f35dda498c8c30931c2431a8bc27ee3f3fc265e6817",
+      "hash": "d6fc88f64ec9725544bc214c3f6bd606b1e2ed62d562eba803f4cde88844d206",
       "title": "Designing for macOS",
       "url": "/design/human-interface-guidelines/designing-for-macos",
-      "updatedAt": "2026-08-16T09:29:22.760Z"
+      "updatedAt": "2026-11-01T02:53:14.113Z"
     },
     "getting-started": {
       "hash": "78a14a0f46e0c65b27f59ba3798f734f4bb58ad86d90c58c10b3a7acedaab5d7",
@@ -103,10 +103,10 @@
       "updatedAt": "2026-08-16T09:29:22.763Z"
     },
     "app-icons": {
-      "hash": "70ea688326acab0265f1b583678a8a96c06924c711c8c9f54abd73c12b67dba1",
+      "hash": "35401497429709b9b9b7161f67f7be2074bde9ffaa2ab90ae6d7bfa20e69bf6c",
       "title": "App icons",
       "url": "/design/human-interface-guidelines/app-icons",
-      "updatedAt": "2026-08-16T09:29:22.764Z"
+      "updatedAt": "2026-11-01T02:53:14.113Z"
     },
     "navigation-and-search": {
       "hash": "f4bd2dce4d11b8effcc6438365ce508d1c7b19dadd0f0303b89f56493c2c54c0",
@@ -373,10 +373,10 @@
       "updatedAt": "2026-08-16T09:29:22.800Z"
     },
     "drag-and-drop": {
-      "hash": "c00002f0067ba2b8021fff8ae2b57ddb9467858ea1ea62d2b1a1ebb4405d85c3",
+      "hash": "1bbe614bf13e255ee0e80f3e4fff6e185c260d0dc3959626f0023f5a9103f179",
       "title": "Drag and drop",
       "url": "/design/human-interface-guidelines/drag-and-drop",
-      "updatedAt": "2026-08-16T09:29:22.801Z"
+      "updatedAt": "2026-11-01T02:53:14.126Z"
     },
     "the-menu-bar": {
       "hash": "b666fab8c643bdbadeeab4b37b14c38694fa7f57d7b87f4621c46f4134323a0d",
@@ -427,10 +427,10 @@
       "updatedAt": "2026-10-06T07:18:51.051Z"
     },
     "pointing-devices": {
-      "hash": "20d1e0a9bc2a4cedd6b93fb9f29314fd43726cceb72ab7ecfb9b4c95a0a44c2a",
+      "hash": "24e77353842e84ac0fa67ab78931330e1af35aa28f96c8a4a7fa3e282ff48f8c",
       "title": "Pointing devices",
       "url": "/design/human-interface-guidelines/pointing-devices",
-      "updatedAt": "2026-08-16T09:29:22.813Z"
+      "updatedAt": "2026-11-01T02:53:14.115Z"
     },
     "homekit": {
       "hash": "3055b4203ff4cb7bad9a6da58bac291eb4f9b79f21dc8bd7db5506913479db1c",
@@ -673,10 +673,10 @@
       "updatedAt": "2026-08-16T09:29:22.839Z"
     },
     "gestures": {
-      "hash": "bfd12010c693e2ba170699c2e856b040d6c73ca28d6154fc4a57f1d0368d84b1",
+      "hash": "76a13791f002d20b7e1b43946f3de94aa74c475dae1e504ad7b73c98447d3ca5",
       "title": "Gestures",
       "url": "/design/human-interface-guidelines/gestures",
-      "updatedAt": "2026-08-16T09:29:22.840Z"
+      "updatedAt": "2026-11-01T02:53:14.114Z"
     },
     "game-center": {
       "hash": "a225b5673484eacc298879684c841a80552afc2db483e072c95eae58872271e4",
@@ -1046,7 +1046,7 @@
     }
   },
   "images": {},
-  "lastSync": "2026-10-25T02:00:45.410Z",
+  "lastSync": "2026-11-01T02:53:14.133Z",
   "totalPages": 174,
   "totalImages": 0
 }

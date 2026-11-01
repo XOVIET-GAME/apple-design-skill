@@ -59,7 +59,19 @@ In addition to the [Standard gestures](https://developer.apple.com/design/human-
 
 ### macOS
 
-People primarily interact with macOS using a [Keyboards](https://developer.apple.com/design/human-interface-guidelines/keyboards) and mouse. In addition, they can make [Standard gestures](https://developer.apple.com/design/human-interface-guidelines/gestures#Standard-gestures) on a Magic Trackpad, Magic Mouse, or a [Game controls](https://developer.apple.com/design/human-interface-guidelines/game-controls) that includes a touch surface.
+People primarily interact with macOS using a [Keyboards](https://developer.apple.com/design/human-interface-guidelines/keyboards) and a [Pointing devices](https://developer.apple.com/design/human-interface-guidelines/pointing-devices), like a mouse or a trackpad. In addition, people can make [Standard gestures](https://developer.apple.com/design/human-interface-guidelines/gestures#Standard-gestures) on a Magic Trackpad, Magic Mouse, or a game controller with a touch surface. On a Mac with a touch display, or on an iPad connected with Sidecar, people can also interact directly using touch gestures as a secondary input mode. For developer guidance, see [Adopting gesture recognizers in your app](https://developer.apple.com/documentation/appkit/adopting-gesture-recognizers-in-your-app) and [Handling AppKit gestures](https://developer.apple.com/documentation/appkit/handling-appkit-gestures).
+
+**Keep the layout and size of interface elements the same when you support touch.** In macOS, touch is secondary to keyboard and pointing device input. People switch between inputs frequently, and it’s essential to keep the interface stable and predictable regardless of how someone interacts with it.
+
+**Make tap targets bigger, not the controls themselves.** Instead of increasing the size of small controls, optimize them for touch by enlarging their tap targets to anticipate that interaction may start slightly outside of their visual bounds. Where possible, use standard framework controls, which the system configures with an optimal tap target size automatically.
+
+**Consider providing expandable controls.** For small or densely packed controls, consider providing a temporary variant resized appropriately for touch that appears when someone taps the control. Ensure the expanded version is easy to see and operate while someone touches and holds it, and leave it in place for a short time after they lift their finger to keep the control accessible to touch. When using standard system controls, steppers, sliders, and dials gain this behavior automatically.
+
+**Don’t use touch as the only way to access controls or features.** Make sure all of your app’s functions are available through input from a keyboard and pointing device. Conversely, aim to provide touch equivalents for actions otherwise performed exclusively with a pointing device, like using a keyboard modifier to shift-drag or displaying a menu when the pointer moves over an element. For guidance, see [macOS](https://developer.apple.com/design/human-interface-guidelines/pointing-devices#macOS).
+
+**Where possible, align with gestures people already know.** Preserve gestures that may already exist for your app on iPhone or iPad, or on Mac with a trackpad or Magic Mouse. Test to ensure they don’t conflict with macOS system gestures.
+
+**Make sure custom gestures work for both touch and trackpad.** Supporting both direct and indirect touch input makes the gesture available to the widest audience. Use modifier keys where needed to help the gesture work for all touch inputs.
 
 ### tvOS
 
@@ -155,6 +167,21 @@ The system provides APIs that support the familiar gestures people use with thei
 
 For guidance on supporting additional gestures and button presses on specific input devices, see [Pointing devices](https://developer.apple.com/design/human-interface-guidelines/pointing-devices), [Remotes](https://developer.apple.com/design/human-interface-guidelines/remotes), and [Game controls](https://developer.apple.com/design/human-interface-guidelines/game-controls).
 
+### macOS trackpad and touch display gestures
+
+The following common actions are supported by standard gestures on both a trackpad and a Mac with a touch display.
+
+|   |   |   |
+| --- | --- | --- |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+
 ## Resources
 
 #### Related
@@ -177,6 +204,7 @@ For guidance on supporting additional gestures and button presses on specific in
 
 |   |   |   |
 | --- | --- | --- |
+|   |   |
 |   |   |
 |   |   |
 |   |   |
